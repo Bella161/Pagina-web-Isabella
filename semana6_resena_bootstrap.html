@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La reseña y sus características - Bootstrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .imagen-autora {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Mensaje indicando el uso del framework -->
+  <div class="alert alert-info text-center mb-0" role="alert">
+    Esta página web utiliza componentes de Bootstrap.
+  </div>
+
+  <!-- Encabezado -->
+  <header class="bg-primary text-white text-center py-4">
+    <h1>La reseña y sus características</h1>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#definicion">¿Qué es una reseña?</a></li>
+          <li class="nav-item"><a class="nav-link" href="#curiosidad">Dato curioso</a></li>
+          <li class="nav-item"><a class="nav-link" href="#autor">Autor</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="container mt-4">
+    <div class="row">
+      <!-- Sección de definición -->
+      <section class="col-md-8" id="definicion">
+        <div class="card mb-4">
+          <div class="card-header bg-warning">
+            <h2 class="card-title">¿Qué es una reseña?</h2>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Una reseña es un texto breve que evalúa, analiza o comenta una obra artística, científica o cultural. Su objetivo es informar, describir y dar una valoración crítica sobre la obra.</p>
+            <p class="card-text">Puede ser literaria, cinematográfica, académica o musical. Su estructura debe ser clara, objetiva y fundamentada.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de dato curioso -->
+      <aside class="col-md-4" id="curiosidad">
+        <div class="card border-info mb-4">
+          <div class="card-header bg-info text-white">
+            Dato Curioso
+          </div>
+          <div class="card-body">
+            <p class="card-text">La reseña existe desde tiempos antiguos, cuando se usaba para registrar y comentar obras orales o escritas en el ámbito académico y filosófico.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-dark text-white text-center py-3" id="autor">
+    <p>Nombre: Isabella Sierra Navarro</p>
+    <p>Correo: isasn2008@gmail.com</p>
+    <p>Institución: Skolmi | Materia: Tecnología | Grado: 10° grado</p>
+    <img src="isabella.jpg" alt="Foto de Isabella" class="imagen-autora mt-2">
+  </footer>
+
+</body>
+</html>
